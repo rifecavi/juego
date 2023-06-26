@@ -155,7 +155,7 @@ time_label.grid(row=0, column=3, padx=20)
 # Timer function to decrease time limit
 def timer():
     global time_limit
-    time_limit -= 0.1
+    time_limit -= 0.3
     time_label['text'] = 'Tiempo restante: {:.1f}s'.format(time_limit)
     if time_limit <= 0:
         tiempo_agotado()
